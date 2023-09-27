@@ -1,4 +1,4 @@
-package otros;
+package Dispositivos.otros;
 import Dispositivos.Dispositivos;
 
 public class otros_disp extends Dispositivos {
@@ -21,13 +21,17 @@ public class otros_disp extends Dispositivos {
             this.descripcion = descripcion;
         }
 
-     // To String
-
         @Override
         public String toString() {
-            return "otros_disp descripcion=" + descripcion + ".";
+            return "Otros Dispositivos [ marca= " + marca + "  modelo= " + modelo + "  precioBase= " + precioBase + "  Descripcion= " + descripcion + " ]";
         }
 
+        
+
+     // To String
+
+        
+        // "marca=" + marca + ", modelo=" + modelo + ", precioBase=" + precioBase + "descripcion"
     
     
 
