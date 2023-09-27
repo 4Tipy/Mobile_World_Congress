@@ -1,30 +1,34 @@
 package otros;
+import Dispositivos.Dispositivos;
 
-public class otros_disp{
+public class otros_disp extends Dispositivos {
 
     private String descripcion;
 
-    //Controlador
-
-    public otros_disp(String descripcion) {
+    //Contructor
+        public otros_disp(String marca, String modelo, int precioBase, String descripcion) {
+        super(marca, modelo, precioBase);
         this.descripcion = descripcion;
     }
 
-    // Getters y Setters
-    
-    public String getDescripcion() {
-        return descripcion;
-    }
+    //Setters y Getter
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
+        public String getDescripcion() {
+            return descripcion;
+        }
 
-    @Override
-    public String toString() {
-        return "Otros Dispositivos descripcion=" + descripcion + ".";
-    }
+        public void setDescripcion(String descripcion) {
+            this.descripcion = descripcion;
+        }
+
+     // To String
+
+        @Override
+        public String toString() {
+            return "otros_disp descripcion=" + descripcion + ".";
+        }
+
+    
     
 
-    
 }
