@@ -1,4 +1,4 @@
-package Tablets;
+package Dispositivos.Tablets;
 import Dispositivos.Dispositivos;
 
 public class Tablets extends Dispositivos {
@@ -19,7 +19,7 @@ public class Tablets extends Dispositivos {
 
     @Override
     public String toString() {
-        return "Tablets [nombrePolsades=" + nombrePolsades + "]";
+        return "Talbets [ marca=" + marca + "  modelo= " + modelo + "  precioBase= " + precioBase + "  nombrePolsades= " + nombrePolsades + " ]";
     }
     
 }

@@ -1,12 +1,16 @@
 package Dispositivos.smartphones;
+
 import Dispositivos.Dispositivos;
 
-public class smartphones {
+public class smartphones extends Dispositivos {
     private String sistemaOperatiu;
     private boolean acelerometre;
     private boolean gps;
 
-    public smartphones(String sistemaOperatiu, boolean acelerometre, boolean gps) {
+
+    public smartphones(String marca, String modelo, int precioBase, String sistemaOperatiu, boolean acelerometre,
+            boolean gps) {
+        super(marca, modelo, precioBase);
         this.sistemaOperatiu = sistemaOperatiu;
         this.acelerometre = acelerometre;
         this.gps = gps;
@@ -38,8 +42,9 @@ public class smartphones {
 
     @Override
     public String toString() {
-        return "smartphones [sistemaOperatiu=" + sistemaOperatiu + ", acelerometre=" + acelerometre + ", gps=" + gps
-                + "]";
+        return "Smartphone [ marca= " + marca + "  modelo= " + modelo + "  precioBase= " + precioBase + "  SistemaOperativo= " + sistemaOperatiu + "  Acelerometre= " + acelerometre + " ]";
     }
+
+    
     
 }

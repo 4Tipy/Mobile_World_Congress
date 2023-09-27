@@ -1,9 +1,9 @@
 package Dispositivos;
 
 public class Dispositivos {
-    private String marca;
-    private String modelo;
-    private int precioBase;
+    protected String marca;
+    protected String modelo;
+    protected int precioBase;
 
     public Dispositivos(String marca, String modelo, int precioBase) {
         this.marca = marca;
@@ -37,7 +37,7 @@ public class Dispositivos {
 
     @Override
     public String toString() {
-        return "Dispositivos [marca=" + marca + ", modelo=" + modelo + ", precioBase=" + precioBase + "]";
+        return "Dispositivos [ marca= " + marca + "  modelo= " + modelo + "  precioBase= " + precioBase + " ]";
     }
 
 }
